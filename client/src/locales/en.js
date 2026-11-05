@@ -1,6 +1,7 @@
 export default {
   // Navigation
   nav: {
+    restocking: 'Restocking',
     overview: 'Overview',
     inventory: 'Inventory',
     orders: 'Orders',
@@ -102,7 +103,28 @@ export default {
   },
 
   // Orders
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and restock the items with the largest forecast demand growth',
+    budget: 'Available Budget',
+    recommended: 'Recommended Items',
+    noItems: 'This budget is too low to restock any items. Increase the budget.',
+    table: { sku: 'SKU', item: 'Item', category: 'Category', demandGap: 'Demand Gap', quantity: 'Quantity', unitCost: 'Unit Cost', cost: 'Cost', leadTime: 'Lead Time' },
+    totalCost: 'Total Cost',
+    remaining: 'Remaining Budget',
+    leadTime: 'Order Lead Time',
+    days: '{count} days',
+    placeOrder: 'Place Order',
+    placing: 'Placing order...',
+    orderPlaced: 'Order {number} submitted. Expected delivery in {days} days.',
+    viewOrders: 'View in Orders',
+    orderFailed: 'Failed to place order'
+  },
   orders: {
+    submittedOrders: 'Submitted Orders',
+    submittedEmpty: 'No restocking orders submitted yet',
+    table_leadTime: 'Lead Time',
+    submittedStatus: 'Submitted',
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',

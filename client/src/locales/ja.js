@@ -1,6 +1,7 @@
 export default {
   // Navigation
   nav: {
+    restocking: '補充',
     overview: '概要',
     inventory: '在庫',
     orders: '注文',
@@ -102,7 +103,28 @@ export default {
   },
 
   // Orders
+  restocking: {
+    title: '補充',
+    description: '予算を設定し、需要予測の増加が最も大きい品目を補充します',
+    budget: '利用可能な予算',
+    recommended: '推奨品目',
+    noItems: 'この予算では補充できる品目がありません。予算を増やしてください。',
+    table: { sku: 'SKU', item: '品目', category: 'カテゴリ', demandGap: '需要ギャップ', quantity: '数量', unitCost: '単価', cost: 'コスト', leadTime: 'リードタイム' },
+    totalCost: '合計コスト',
+    remaining: '残りの予算',
+    leadTime: '注文リードタイム',
+    days: '{count}日',
+    placeOrder: '注文する',
+    placing: '注文中...',
+    orderPlaced: '注文 {number} を送信しました。納品予定: {days}日後。',
+    viewOrders: '注文を表示',
+    orderFailed: '注文に失敗しました'
+  },
   orders: {
+    submittedOrders: '送信済み注文',
+    submittedEmpty: '送信済みの補充注文はまだありません',
+    table_leadTime: 'リードタイム',
+    submittedStatus: '送信済み',
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
